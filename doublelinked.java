@@ -24,8 +24,8 @@ public class doublelinked<T>{
     }
 
 
-    public append(T data){
-        Node<T> newNode = new Node<T>(data, this.tail, null);
+    public void append(T data){
+        Node<T> newNode = new Node<T>(data, this.head, null);
 
         if (this.tail == null){
             this.head = newNode;
@@ -51,7 +51,7 @@ public class doublelinked<T>{
         }
         string.append("null");
 
-        return string;
+        return string.toString();
     }
 
 
